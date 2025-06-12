@@ -166,7 +166,7 @@ const ServiceDetail: React.FC = () => {
             <motion.div initial={{ opacity: 0, x: -40 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="flex flex-col">
               <img src={service.image} alt={service.name} className="w-full h-64 object-cover rounded-2xl shadow-lg mb-8" />
               <h2 className="text-2xl font-bold text-blue-900 mb-4">Descripción del Servicio</h2>
-              <p className="text-blue-700 leading-relaxed mb-4">{service.longDesc}</p>
+              <p className="text-blue-700 leading-relaxed mb-4 text-justify">{service.longDesc}</p>
               <div className="bg-blue-50 rounded-xl p-4 text-blue-900 font-semibold shadow mb-4">¿Tienes dudas? ¡Contáctanos para una asesoría personalizada!</div>
             </motion.div>
 
