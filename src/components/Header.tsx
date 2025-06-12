@@ -18,11 +18,11 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
           </div>
           
           <nav className="hidden md:flex space-x-8">
-            <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-200 hover:text-blue-400 font-medium"}>Inicio</NavLink>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-200 hover:text-blue-400 font-medium"}>Sobre Nosotros</NavLink>
-            <NavLink to="/services" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-200 hover:text-blue-400 font-medium"}>Servicios</NavLink>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-200 hover:text-blue-400 font-medium"}>Contáctanos</NavLink>
-            <NavLink to="/portal" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-200 hover:text-blue-400 font-medium"}>Portal</NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-700 hover:text-blue-700 font-medium"}>Inicio</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-700 hover:text-blue-700 font-medium"}>Sobre Nosotros</NavLink>
+            <NavLink to="/services" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-700 hover:text-blue-700 font-medium"}>Servicios</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-700 hover:text-blue-700 font-medium"}>Contáctanos</NavLink>
+            <NavLink to="/portal" className={({ isActive }) => isActive ? "text-blue-800 font-bold" : "text-gray-700 hover:text-blue-700 font-medium"}>Portal</NavLink>
           </nav>
 
           <Button
@@ -39,11 +39,11 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, toggleMenu }) => {
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            <NavLink to="/" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-200 hover:text-blue-400"}>Inicio</NavLink>
-            <NavLink to="/about" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-200 hover:text-blue-400"}>Sobre Nosotros</NavLink>
-            <NavLink to="/services" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-200 hover:text-blue-400"}>Servicios</NavLink>
-            <NavLink to="/contact" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-200 hover:text-blue-400"}>Contáctanos</NavLink>
-            <NavLink to="/portal" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-200 hover:text-blue-400"}>Portal</NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-700 hover:text-blue-700"}>Inicio</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-700 hover:text-blue-700"}>Sobre Nosotros</NavLink>
+            <NavLink to="/services" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-700 hover:text-blue-700"}>Servicios</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-700 hover:text-blue-700"}>Contáctanos</NavLink>
+            <NavLink to="/portal" className={({ isActive }) => isActive ? "block px-3 py-2 text-blue-800 font-bold" : "block px-3 py-2 text-gray-700 hover:text-blue-700"}>Portal</NavLink>
           </div>
         </div>
       )}

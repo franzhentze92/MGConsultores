@@ -96,9 +96,9 @@ const Home: React.FC = () => (
     {/* Objectives/Why Us */}
     <section className="w-full py-16 bg-gradient-to-r from-blue-50 via-blue-100 to-blue-50 flex flex-col items-center">
       <motion.h2 initial={{ opacity: 0, y: 40 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.7 }} className="text-3xl md:text-4xl font-bold text-blue-900 mb-8">¿Por qué elegirnos?</motion.h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 w-full max-w-6xl place-items-center">
         {objectives.map((o, i) => (
-          <motion.div key={o.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="flex flex-col items-center bg-white rounded-2xl px-8 py-6 shadow-lg hover:scale-105 transition-transform">
+          <motion.div key={o.title} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: i * 0.1 }} className="flex flex-col items-center justify-center bg-white rounded-2xl px-8 py-6 shadow-lg hover:scale-105 transition-transform text-center h-full">
             {o.icon}
             <span className="font-bold text-blue-900 mb-1 mt-2">{o.title}</span>
             <span className="text-blue-700 text-center text-sm">{o.desc}</span>
